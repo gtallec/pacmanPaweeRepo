@@ -1,9 +1,9 @@
 class ModelGhost extends ModelMovingActor
 {
     // dans la pratique le fantome est soit relié à la view soit relié au game pour l'instant on le relie à a view
-    constructor(x, y, speed, tempo, model,trollingProbability,number)
+    constructor(x, y, speed, numberOfSubdivisions, model,trollingProbability,number)
     {
-        super(x,y,speed,tempo,model);
+        super(x,y,speed,numberOfSubdivisions,model);
         this.number = number;
         this.moving = false;
     }

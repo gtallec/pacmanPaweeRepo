@@ -9,8 +9,7 @@ class Graph
     //Renvoie la direction que le fantome doit prendre à l'intersection
     dijkstra(root, end)
     {
-        console.log(root);
-        console.log(end);
+
         //réinitialise tous les sommets avant d'appliquer dijkstra
         var alreadySeen = new Array();
         var vertexPi = new VertexPi(this.listOfVertices);
@@ -63,8 +62,6 @@ class Graph
                     }
                 }
             }
-            console.log(pivot);
-            console.log(piPivot);
             alreadySeen.push(pivot);
         }
         //depile le chemin de manière à faire choisir la bonne direction

@@ -5,5 +5,5 @@ function sendPulse()
 }
 var onmessage = function(e)
 {
-    var pulseUpdate = setInterval(function(){sendPulse()},1000);  
+    var pulseUpdate = setInterval(function(){sendPulse()},200);  
 }
